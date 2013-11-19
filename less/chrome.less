@@ -1,0 +1,88 @@
+//
+// Chrome -- of the website
+// --------------------------------------------------
+
+
+// Header
+// -------------------------
+
+.header {
+	padding: 30px 0;
+}
+
+
+
+// Navigation
+// -------------------------
+
+.navigation {
+	margin: 0;
+}
+
+
+
+// Provost Navigation
+// -------------------------
+
+.nav-provost {
+	margin-top: 50px;
+	background: #3f3f3f;
+	font-size: 13px;
+
+	.breadcrumb {
+		background: transparent; 
+		padding-left: 0;
+		padding-right: 0;
+		margin: 0;
+		
+		li {
+			margin: 0;
+			color: #fff;
+			font-size: 13px;
+			text-shadow: none;
+			-webkit-font-smoothing: antialiased;
+		}
+		a { color: inherit; }
+	}
+}
+
+
+// Footer
+// -------------------------
+
+#footer { 
+	position: relative;
+	padding: 30px 0 20px; 
+	font-size: 12px; letter-spacing: 0.03em;
+	background: #5A5A5A;
+
+	a {
+		color: #aaa !important;		
+		&.logo { 
+			background: url("http://www.northeastern.edu/neuhome/images/logo-footer.png") no-repeat scroll left top transparent; 
+			display:block; 
+			height: 25px; 
+			opacity: 0.6; 
+
+			&:hover { opacity: 1; }
+		}
+		&.social { display: block; float: right; height: 16px; margin-left: 6px; opacity: 0.7; width: 16px; } 
+		&.social:hover { opacity: 1; }
+		&.facebook { background: url("http://northeastern.edu/news/wp-content/themes/nu-news/images/footer/footer-fb-icon.png") repeat scroll 0 0 transparent; } 
+		&.twitter { background: url("http://northeastern.edu/news/wp-content/themes/nu-news/images/footer/footer-twitter-icon.png") repeat scroll 0 0 transparent; } 
+		&.youtube { background: url("http://northeastern.edu/news/wp-content/themes/nu-news/images/footer/footer-youtube-icon.png") repeat scroll 0 0 transparent; }
+	}
+	a:link, .nuglobal a:visited { color: #aaa !important; } 
+	a:hover, .nuglobal a:active { color: #888 !important; }
+
+	p { color:#aaa !important; font-size: 13px !important; line-height: 125%; margin-bottom: 10px !important; } 
+	.about-news p, p.about-news { color: #7F7F7F; font-size: 12px; line-height: 130%; padding-right: 10px; } 
+	.media-icons-footer { clear: none; display: block; float: left; height: 26px; width: 100px; } 
+	.media-icon { background-image: url("http://northeastern.edu/news/wp-content/themes/nu-news/images/media-icons.png"); clear: none; display: block; float: left; height: 26px; margin: 0 7px 0 0; width: 26px; } 
+	#icon-youtube { background-position: 0 30px; } 
+	#icon-youtube:hover { background-position: 0 0; } 
+	#icon-twitter { background-position: 60px 30px; } 
+	#icon-twitter:hover { background-position: 60px 0; } 
+	#icon-facebook { background-position: 30px 30px; } 
+	#icon-facebook:hover { background-position: 30px 0; } 
+}

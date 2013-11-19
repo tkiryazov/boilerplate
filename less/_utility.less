@@ -1,0 +1,102 @@
+//
+// Utility
+// --------------------------------------------------
+
+
+// Media Queries
+// -------------------------
+
+// Small devices (tablets, 768px and up)
+@media (min-width: @screen-sm-min) {}
+
+// Medium devices (desktops, 992px and up)
+@media (min-width: @screen-md-min) {}
+
+// Large devices (large desktops, 1200px and up)
+@media (min-width: @screen-lg-min) {}
+
+
+// Type
+// -------------------------
+
+h1,
+h2,
+h3,
+h4,
+h5 { }
+
+
+// Images
+// -------------------------
+
+img { max-width: 100%; }
+
+
+// Blockquote
+// -------------------------
+
+blockquote {
+	padding: 5px 40px;
+	margin: 0 0 25px;
+	color: @brand-primary;
+	border: none;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+
+	&:before {
+		content: "\201C";
+		font-size: 75px;
+		font-family: Georgia, serif;
+		position: absolute;
+		top: -20px;
+		left: 0;
+	}
+
+	p {
+		margin: 0 0 10px !important; 
+		font-family: @font-family-serif;
+		font-size: 125% !important;
+		line-height: 1.6 !important;
+	}
+
+	small {
+		color: inherit;
+		font-size: 90%;
+		font-weight: bold;
+
+		.tagline { font-weight: 300; }
+		&:before, &:after { content: '' !important; }
+	}
+
+	&.pull-right,
+	&.pull-left {
+		width: 50%;
+		border: none;
+		
+		p, small {
+			text-align: left;
+		}
+
+		@media (max-width: @screen-xs) {
+			width: 100% !important;
+		}
+	}
+	&.pull-right {
+		padding: 5px 0 5px 40px;
+		margin-left: 20px;
+	}
+	&.pull-left {
+		padding: 5px 0 5px 40px;
+		margin-right: 20px;
+	}
+
+	&.colored {
+		padding: 30px 35px 30px 55px;
+		background: darken(@brand-primary, 10%);
+
+		&:before { top: 5px; left: 17px; }
+		p { font-weight: 300; }
+		&:before, 		
+		p, small { color: #FFF; }
+	}
+}
