@@ -20,16 +20,22 @@
 // Type
 // -------------------------
 
+body {
+	-webkit-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
 h1, .h1 {
 	margin: 0;
 	font-family: @font-family-serif;
 	font-weight: 400;
 }
 h2, .h2 {}
-h3, .h3 {
-	font-family: @font-family-serif;
-	font-style: italic;
-}
+h3, .h3 { font-style: italic; }
+h4, .h4 {}
+h5, .h5,
+h6, .h6 { font-weight: bold; }
 
 // Sections
 // -------------------------
@@ -81,13 +87,36 @@ h3, .h3 {
 // Entry Header
 // -------------------------
 
-.entry-header {}
+.entry-header {
+	margin: 0 0 25px;
+}
 
 
 // Entry Content
 // -------------------------
 
-.entry-content {}
+.entry-content {
+	p,
+	ul,
+	ol {
+		margin-bottom: 25px;
+	}
+}
+
+
+// Entry Sidebar
+// -------------------------
+
+.entry-sidebar {
+	padding: 50px 0 0;
+	text-align: right;
+
+	span {
+		display: block;
+		line-height: 1.45;
+		font-size: 12px;
+	}
+}
 
 
 // Entry Footer
